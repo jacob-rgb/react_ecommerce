@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+
+.sobre-nosotros-content  {
+    width: 100%;
+    padding-top:10rem;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    line-height: 1.5rem ;
+}
+
+.sobre-nosotros-content .intro {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px 60px;
+}
+
+.sobre-nosotros-content .intro .img {
+    background-image: url('https://molempire.com/app/uploads/2017/10/Teamwork.jpg');
+    background-size: cover;
+    background-position: center;
+    flex-basis: 350px;
+    flex-grow: 2;
+    min-height: 450px;
+    border-radius: 50% 20% 50% 20%;
+}
+
+.sobre-nosotros-content .intro .text {
+    flex-basis: 300px;
+    flex-grow: 5;
+    font-size: 18px;
+}
+
+ .sobre-nosotros-content h2 {
+    color: rgb(37, 139, 255);
+    font-size: 40px;
+    margin-bottom: 30px;
+    line-height: 3rem;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+.sobre-nosotros-content .intro .text p {
+    margin: 20px 0;
+    width: 100%;
+}
+
+.sobre-nosotros-content .intro .text b {
+    color: rgb(102, 102, 102);
+}
+
+.icono-section {
+    width: 80%;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.iconos-row {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.iconos-row  .icono-cont {
+    flex-basis: 160px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconos-row  .icono-cont box-icon {
+    width: 100% !important;
+    height: 100px;
+    fill: rgb(37, 139, 255) !important;
+}
+
+.iconos-row  .icono-cont h3 {
+    font-size: 1.6rem;
+    color: rgb(70, 129, 196);
+    font-family: 'Fredericka the Great', cursive;
+}
+
+/* SOCIOS SECTION */
+
+.socios-section {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+
+.socios-section .socio-cont {
+    flex-basis: 200px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 0 10px;
+}
+
+.socios-section .socio-cont:hover {
+    border: 2px solid #007aff;
+    border-radius: 8px;
+}
+
+.socios-section .socio-cont img {
+    max-width: 200px;
+}
+
+.socios-section .socio-cont h5 {
+    margin-top: 15px;
+}
+
+.socios-section .socio-cont:last-child h5 {
+    margin-top: 40px;
+}
+
+.sociostitle {
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 1080px) {
+    .sobre-nosotros-content {
+        padding-top: 7rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sobre-nosotros-content .intro {
+        width: 90%;
+        text-align: center;
+    }
+
+    .sobre-nosotros-content .intro .img {
+        min-height: 250px;
+        margin-bottom: 20px;
+    }
+
+    .sobre-nosotros-content h2 {
+        font-size: 25px;
+    }
+
+    .icono-section {
+        width: 100%;
+        margin: 0;
+    }
+
+    .iconos-row {
+        width: 90%;
+        margin-top: 0;
+    }
+
+    .iconos-row .icono-cont h3 {
+        font-size: 1rem;
+    }
+
+    .iconos-row  .icono-cont box-icon {
+        width: 80px !important;
+    }
+
+}
+

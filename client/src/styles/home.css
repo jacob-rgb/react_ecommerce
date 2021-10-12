@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+.newProducts h1 {
+    color: rgb(0, 132, 255);
+}
+.inicio {
+    width: 100%; 
+    background-image: url('../images/fondo.jpg');
+    background-size: cover;
+    margin-top: 4rem;
+}
+
+.row {
+    position: relative;
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.col {
+    display: flex;
+    min-width: 50%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.col img {
+    max-width: 80% ;
+}
+
+.intro-text {
+    position: relative;
+    background-image: url('https://media.istockphoto.com/illustrations/white-thunder-lightning-abstract-electric-on-black-background-illustration-id1083479458?k=20&m=1083479458&s=170667a&w=0&h=h8UHwsHt3fG3LX8y-2d6V6ZQ2VgqtOZAbZFmFntEqX0=');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(230, 230, 230);
+}
+
+.intro-text::after {
+    content: '';
+    position: absolute;
+    right: 0px;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    transform: translateX(40%) rotate(45deg);
+}
+
+.intro-text h1 {
+    max-width: 60%;
+    font-size: 50px;
+    text-shadow: 2px 2px 2px rgb(0, 132, 255);
+}
+
+.col-img {
+    
+}
+
+.max-h {
+    height: 90vh;
+} 
+
+
+/* New Products section  */
+
+.newProducts  {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.newProducts h1,
+.categoriasSection h1 {
+    text-align: center;
+    font-size: 35px;
+}
+
+
+/* Video section  */
+
+.videoSection {
+    width: 100%;
+}
+
+.videoSection::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0px;
+    height: 60px;
+    width: 100%;
+    background: linear-gradient(to bottom, transparent , white);
+    z-index: 1;
+}
+
+.videoSection img {
+    flex-basis: 500px;
+    flex-grow: 3;
+    max-height: 415px;
+}
+
+
+.video {
+    position: relative;
+    flex-basis: 550px;
+    flex-grow: 5;
+}
+ video {
+    width: 100%;
+    height: 100%;
+}
+
+.blackGradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(32, 32, 32, .7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(236, 236, 236);
+    text-align: center;
+    background: linear-gradient(217deg, rgba(255, 255, 255, 0.8), rgba(255,0,0,0) 70.71%),
+                linear-gradient(127deg, rgba(0, 119, 255, 0.8), rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, rgba(0, 0, 0, 0.8), rgba(0,0,255,0) 70.71%);
+}
+
+.blackGradient h1 {
+    font-size: 50px;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+.blackGradient button {
+    margin-top: 25px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(40, 127, 241);
+    color: white;
+    cursor: pointer;
+    transition: all .6s ease;
+}
+
+.blackGradient button:hover {
+    transform: scale(1.2);
+    box-shadow: 1px 1px 1px black;
+}
+
+/* Categorias Section  */
+
+.categoria {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.plus {
+       
+}
+
+.categoria:hover .categoriaDesc {
+    transform: translateX(0);
+}
+
+.categoria img {
+    width: 100%;
+    height: 100%;
+    max-width: 520px;
+    max-height: 450px;
+}
+
+.categoriasCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.categoriaDesc {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(27, 27, 27, .7);
+    color: white;
+    transform: translateX(-600px);
+    transition: transform .4s ease;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+/* //Imagen horizontal section  */
+
+.seccion-imagen-horizontal {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 60px 0;
+}
+
+
+.seccion-imagen-horizontal img {
+    width: 100%;
+}
+
+.seccion-imagen-horizontal .gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-imagen-horizontal .gradient > div {
+    
+    font-size: 58px;
+    font-family: 'Fredericka the Great', cursive;
+    text-shadow: 1px 1px black;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin: 10px;
+    background-color: rgba(253, 253, 253, 0.8);
+    border-radius: 20px;
+    color: rgb(0, 156, 255);
+
+}
+
+.seccion-imagen-horizontal .palabra-cambiante {
+    max-height: 80px;
+    overflow: hidden;
+
+}
+
+.seccion-imagen-horizontal .palabra-cambiante span {
+    display: block;
+    margin-left: 15px;
+    color: rgb(0, 103, 218);
+}
+
+.seccion-imagen-horizontal .palabra-cambiante-cont {
+    animation: movimientoVerticalTexto 8s  infinite  ;
+}
+
+@keyframes movimientoVerticalTexto {
+    0% { transform: translateY(0px); }
+    20% { transform: translateY(0px);}
+    25% { transform: translateY(-73px); }
+    45% { transform: translateY(-73px);}
+    50% { transform: translateY(-143px); }
+    70% { transform: translateY(-143px);}
+    75% { transform: translateY(-73px); }
+    95% { transform: translateY(-73px);}
+    100% { transform: translateY(0px); }
+}
+
+@media screen and (min-width: 1500px) {
+    .videoSection img {
+        max-height: 615px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    .intro-text::after {
+        display: none;
+    }
+
+    .col img {
+        max-width: 100%;
+    }
+
+    .max-h {
+        height:100%;
+    }
+
+    .categoria img {
+        max-height: 400px;
+    }
+
+}
+
+@media screen and (max-width: 1100px) {
+    
+    .categoriasCont a {
+        width: 50%;
+    }
+
+    .categoriasCont img   {
+        width: 100%;
+    }
+
+    .videoSection img {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 940px) {
+    
+    .seccion-imagen-horizontal .gradient {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
